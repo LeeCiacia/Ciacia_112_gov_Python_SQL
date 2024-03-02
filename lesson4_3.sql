@@ -43,47 +43,54 @@ FROM student
 ORDER BY score
 LIMIT 2;
 
+/*主修英文及分數<60的同學*/
 SELECT *
 FROM student
 WHERE major = '英語'
 ORDER BY score DESC
 LIMIT 1
 
+/*主修英文及分數<60的同學*/
 SELECT *
 FROM student
 WHERE major = '英語' AND score < 60
 
+/*主修英文或分數>60的同學*/
 SELECT *
 FROM student
 WHERE major = '英語' OR score > 60
 
+/*主修英文或生物或歷史的同學*/
 SELECT *
 FROM student
 WHERE major = '英語' OR major = '生物' OR major = '歷史'
 
-/*把OR改寫成IN*/
+/*可以把OR改寫成IN*/
 SELECT *
 FROM student
 WHERE major IN('英語','生物','歷史')
 
+/*80~100*/
 SELECT *
 FROM student
 WHERE score >= 80 AND score <= 100
 
-/*可以把上面的改寫成between*/
+/*可以把上面的區間改寫成between*/
 SELECT *
 FROM student
 WHERE score between 80 AND 100
 
+/*尋找小黃*/
 SELECT *
 FROM student
 WHERE name ='小黃'
 
+/*尋找不是小黃*/
 SELECT *
 FROM student
 WHERE NOT name ='小黃'
 
-
+/*尋找有黃的*/
 SELECT *
 FROM student
 WHERE name LIKE '%黃%'
