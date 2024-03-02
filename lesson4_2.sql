@@ -17,3 +17,19 @@ CREATE TABLE student(
 
 SELECT *
 FROM student
+
+INSERT INTO student VALUES (2,'小白','地理')
+RETURNING *;
+/*指定欄位都要有*/
+INSERT INTO student(name,major) VALUES ('小黑','數學')
+RETURNING *;
+
+/*錯誤的NOT NULL*/
+INSERT INTO student(name,major) VALUES (NULL,'地理')
+RETURNING *;
+
+/*新增多筆*/
+INSERT INTO student(name,major)
+VALUES ('小白','國文'),('小藍','英文')
+RETURNING *;
+
