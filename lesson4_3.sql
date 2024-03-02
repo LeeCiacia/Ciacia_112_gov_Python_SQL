@@ -24,3 +24,4 @@ FROM student
 
 SELECT name AS 姓名,major AS 主修
 FROM student
+
