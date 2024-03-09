@@ -18,3 +18,4 @@ SELECT * FROM stations;
 /*計算stationa筆數*/
 SELECT COUNT(*)AS 筆數
 FROM stations;
+
