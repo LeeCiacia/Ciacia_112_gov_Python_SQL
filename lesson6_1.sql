@@ -35,3 +35,4 @@ FROM stations;
 
 SELECT COUNT(*) AS 筆數
 FROM gate_count;
+
