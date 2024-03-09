@@ -1,4 +1,5 @@
 DROP TABLE IF EXISTS stations;
+
 CREATE TABLE IF NOT EXISTS stations(
 	編號 INT PRIMARY KEY,
 	名稱 VARCHAR(20) NOT NULL,
@@ -12,7 +13,8 @@ CREATE TABLE IF NOT EXISTS stations(
 	youbike BOOL
 );
 
-/*計算stationa筆數*/
+/*stationa資料*/
 SELECT * FROM stations;
+/*計算stationa筆數*/
 SELECT COUNT(*)AS 筆數
 FROM stations;
