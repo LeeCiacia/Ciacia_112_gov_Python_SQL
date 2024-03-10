@@ -27,6 +27,7 @@ CREATE TABLE IF NOT EXISTS gate_count(
 	ON UPDATE CASCADE
 );
 
+
 SELECT * FROM stations;
 SELECT * FROM gate_count;
 
@@ -35,4 +36,5 @@ FROM stations;
 
 SELECT COUNT(*) AS 筆數
 FROM gate_count;
+
 
