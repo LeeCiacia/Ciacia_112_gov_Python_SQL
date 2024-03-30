@@ -7,3 +7,6 @@ CREATE TABLE IF NOT EXISTS student(
 	English INT,
 	Math INT
 );
+
+INSERT INTO student (name, chinese, english, math)
+VALUES('李蝦蝦',75,89,70);
