@@ -10,3 +10,6 @@ CREATE TABLE IF NOT EXISTS student(
 
 INSERT INTO student (name, chinese, english, math)
 VALUES('李蝦蝦',75,89,70);
+
+SELECT *
+FROM student
