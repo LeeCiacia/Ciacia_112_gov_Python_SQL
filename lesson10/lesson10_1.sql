@@ -1,4 +1,4 @@
-DROP TABLE student; /*不要原本的student*/
+DROP TABLE IF EXISTS student; /*不要原本的student*/
 
 CREATE TABLE IF NOT EXISTS student(
 	id SERIAL PRIMARY KEY,
