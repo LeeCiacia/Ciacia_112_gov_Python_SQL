@@ -3,7 +3,7 @@ import streamlit as st
 #把lesson13_1的程式碼貼過來 
 from dotenv import load_dotenv
 import psycopg2
-import os
+import os  #抓電腦的虛擬環境變數
 load_dotenv()
 
 @st.cache_resource #加這個效能好
