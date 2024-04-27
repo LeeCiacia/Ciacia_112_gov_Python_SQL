@@ -23,3 +23,7 @@ CREATE TABLE IF NOT EXISTS youbike(
 
 DROP TABLE youbike;
 DROP TABLE 站點資訊;
+
+INSERT INTO 站點資訊 /*如果要選全部，就把('站點編號') 省略*/
+VALUES ('500101001','Youbike2.0_捷運科技大樓站','大安區','復興南路二段235號前',25.02605,121.5436)
+ON CONFLICT DO NOTHING; /*發生衝突不要做任何事*/
